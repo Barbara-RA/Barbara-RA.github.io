@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <link rel="stylesheet" href="css/StyleConversao.css">
+    <script src="script.js"></script>
     <title>Introdução</title>
 </head>
 
@@ -19,6 +20,20 @@
     </header>
     
     <main>
+        <section class="converter">
+            <h1>Conversor Decimal para Binário e Hexadecimal</h1>
+            <div>
+                <label for="Decimal">Número Decimal:</label>
+                <input type="text" id="decimal">
+                <button onclick="converterDecBin(); converterDecHex()">Converter</button>
+                <p id="resultadoBin">Binário: </p>
+                <button onclick="copiar('resultadoBin')" class="copiar">Copiar</button>
+                <p id="resultadoHex">Hexadecimal: </p>
+                <button onclick="copiar('resultadoHex')" class="copiar">Copiar</button>
+                <button onclick="reset()" class="btn">Limpar</button>
+            </div>
+        </section>
+
         <section class="converter">
             <img src="img/logo.ifpng.png" alt="">
 
@@ -80,6 +95,7 @@
             var decimal = hexadecimalParaDecimal(hex);
             document.getElementById("resultadoDecimalHex").textContent = "Decimal: " + decimal;
         }
+        
     </script>
     
 </body>
