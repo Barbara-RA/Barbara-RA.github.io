@@ -104,6 +104,7 @@ div{
     background-color: #9dc1a4;
     width: 700px;
     border-radius: 15px;
+    padding: 20px;
 }
 
 input{
@@ -117,6 +118,14 @@ input{
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
+.geral{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+
+}
+
 button{
     font-weight: 600;
     font-size: 12px;

@@ -26,31 +26,28 @@
                 <label for="decimal">Número Decimal:</label>
                 <input type="text" id="decimal">
                 <button onclick="converterDecBin(); converterDecHex()">Converter</button>
-                <p id="resultadoBinario">Binário: </p>
-                <button onclick="copiar('resultadoBinario')" class="copiar">Copiar</button>
-                <p id="resultadoHexadecimal">Hexadecimal: </p>
-                <button onclick="copiar('resultadoHexadecimal')" class="copiar">Copiar</button>
+                <p id="resultadoBinario">Binário: </p><button onclick="copiar('resultadoBinario')" class="copiar">Copiar</button>
+                <p id="resultadoHexadecimal">Hexadecimal: </p><button onclick="copiar('resultadoHexadecimal')" class="copiar">Copiar</button>
                 <button onclick="reset()" class="btn">Limpar</button>
             </div>
+
             <h1>Conversor Decimal-Binário-Hexadecimal</h1>
-            <div class="conversor">
+
+            <div class="geral">
+                <div>
                 <label for="decimalNum">Decimal:</label>
-                <input type="text" id="decimalNum">
-                <div>
-                    <button onclick="converterDec()">Converter</button>
-                    <button onclick="copiar2('decimalNum')" class="copiar">Copiar</button>
+                <input type="text" id="decimalNum"> <button onclick="converterDec()">Converter</button> <button onclick="copiar2('decimalNum')" class="copiar">Copiar</button>
                 </div>
+                 
+                <div>
                 <label for="bin">Binário:</label>
-                <input type="text" id="bin">
-                <div>
-                    <button onclick="converterBin()">Converter</button>
-                    <button onclick="copiar2('bin')" class="copiar">Copiar</button>
+                <input type="text" id="bin"> <button onclick="converterBin()">Converter</button> <button onclick="copiar2('bin')" class="copiar">Copiar</button>
                 </div>
-                <label for="hexadecimal">Hexadecimal:</label>
-                <input type="text" id="hexadecimal">
+                
                 <div>
-                    <button onclick="converterHex()">Converter</button>
-                    <button onclick="copiar2('hexadecimal')" class="copiar">Copiar</button>
+                <label for="hexadecimal">Hexadecimal:</label>
+                <input type="text" id="hexadecimal"> <button onclick="converterHex()">Converter</button> <button onclick="copiar2('hexadecimal')" class="copiar">Copiar</button>
+                    
                 </div>
                 <button onclick="reset2()" class="btn">Limpar</button>
             </div>
@@ -58,8 +55,10 @@
     </main>
 
     <footer>
-        <h3>Todos os direitos reservados.</h3>
+        <p>Todos os diretos reservados</p>
+        <img src="img/logo.if_footer.png" alt="">
     </footer>
+    
 
     <script>
 
