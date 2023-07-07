@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -19,62 +19,43 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="converter">
         <section class="converter">
-            <h1>Conversor Decimal para Binário e Hexadecimal</h1>
             <div>
+                <h1>Conversor Decimal para Binário e Hexadecimal</h1>
                 <label for="decimal">Número Decimal:</label>
                 <input type="text" id="decimal">
                 <button onclick="converterDecBin(); converterDecHex()">Converter</button>
-                <p id="resultadoBinario">Binário: </p>
-                <button id="cpBinario" onclick="copiar('resultadoBinario')" class="copiar">Copiar</button>
-                <p id="resultadoHexadecimal">Hexadecimal: </p>
-                <button id="cpHexadecimal" onclick="copiar('resultadoHexadecimal')" class="copiar">Copiar</button>
-                <br>
-                <button onclick="reset()" class="btn">Limpar</button>
+                <div class="petista">
+                    <p id="resultadoBinario">Binário: </p>
+                    <button onclick="copiar('resultadoBinario')" class="copiar">Copiar</button>
+                    <p id="resultadoHexadecimal">Hexadecimal: </p>
+                    <button onclick="copiar('resultadoHexadecimal')" class="copiar">Copiar</button>
+                    <br>
+                    <button onclick="reset()" class="btn">Limpar</button>
+                </div>
             </div>
-
-            <h1>Conversor Decimal-Binário-Hexadecimal</h1>
             <div class="geral">
+                <h1>Conversor Decimal-Binário-Hexadecimal</h1>
                 <div>
-<<<<<<< HEAD
                     <div>
                         <label for="decimalNum">Decimal:</label>
                         <input type="text" id="decimalNum"> <button onclick="converterDec()">Converter</button> <button
                             onclick="copiar2('decimalNum')" class="copiar">Copiar</button>
-=======
-
-                    <div>
-                        <label for="decimalNum">Decimal:</label>
-                        <input type="text" id="decimalNum"> <button onclick="converterDec()">Converter</button>
-                        <button onclick="copiar2('decimalNum')" class="copiar">Copiar</button>
->>>>>>> 3b775431e22e5fa1e6501186b2044a12f50d14aa
                     </div>
 
                     <div>
                         <label for="bin">Binário:</label>
-<<<<<<< HEAD
                         <input type="text" id="bin"> <button onclick="converterBin()">Converter</button> <button
                             onclick="copiar2('bin')" class="copiar">Copiar</button>
-=======
-                        <input type="text" id="bin"> <button onclick="converterBin()">Converter</button> 
-                        <button onclick="copiar2('bin')" class="copiar">Copiar</button>
->>>>>>> 3b775431e22e5fa1e6501186b2044a12f50d14aa
                     </div>
 
                     <div>
                         <label for="hexadecimal">Hexadecimal:</label>
-<<<<<<< HEAD
                         <input type="text" id="hexadecimal"> <button onclick="converterHex()">Converter</button> <button
                             onclick="copiar2('hexadecimal')" class="copiar">Copiar</button>
 
                     </div>
-=======
-                        <input type="text" id="hexadecimal"> <button onclick="converterHex()">Converter</button> 
-                        <button onclick="copiar2('hexadecimal')" class="copiar">Copiar</button>
-                    </div>
-
->>>>>>> 3b775431e22e5fa1e6501186b2044a12f50d14aa
                     <button onclick="reset2()" class="btn">Limpar</button>
                 </div>
         </section>

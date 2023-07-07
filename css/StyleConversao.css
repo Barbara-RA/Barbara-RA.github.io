@@ -91,8 +91,10 @@ h1{
     padding: 15px;
     text-shadow: 1px 1px 0px rgb(124, 125, 122);
     font-size: 30px;
-    border: 1px solid white;
-    background-color: rgba(255,255,255,0.2);
+}
+
+.converter h1 {
+    color: white;
 }
 
 h2{
@@ -102,12 +104,27 @@ h2{
     
 }
 
-div{
-    background-color: #9dc1a4;
-    width: 700px;
+
+section > div{
+    background-color: rgba(157, 193, 164, 0.9);
+    width: 650px;
     border-radius: 15px;
     padding: 20px;
+    height: 500px;
+    margin: 15px;
 }
+
+section > div > div {
+    margin: 10px 0px;
+}
+
+.petista {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
 
 input{
     border-radius: 15px;
@@ -115,16 +132,23 @@ input{
     background-color: #ebefdf;
 }
 
+.petista button {
+    margin: 0px;
+}
+
 .converter{
     background-image: url(../img/fundo.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: stretch;
 }
 
 .geral{
     display: flex;
     flex-direction: column;
     padding: 20px 0px;
+    margin-left:10px;
 
 }
 
@@ -139,10 +163,6 @@ button{
     margin: 10px;
 }
 
-
-#cpHexadecimal, #cpBinario{
-    text-align: left;
-}
 
 footer{
     color: white;
