@@ -134,6 +134,12 @@ button{
     background-color: #146d06;
     border: none;
     border-radius: 15px;
+    margin: 10px;
+}
+
+
+#cpHexadecimal, #cpBinario{
+    text-align: left;
 }
 
 footer{

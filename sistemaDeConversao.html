@@ -22,12 +22,15 @@
     <main>
         <section class="converter">
             <h1>Conversor Decimal para Binário e Hexadecimal</h1>
-            <div class="conversor">
+            <div >
                 <label for="decimal">Número Decimal:</label>
                 <input type="text" id="decimal">
                 <button onclick="converterDecBin(); converterDecHex()">Converter</button>
-                <p id="resultadoBinario">Binário: </p> <button onclick="copiar('resultadoBinario')" class="copiar">Copiar</button>
-                <p id="resultadoHexadecimal">Hexadecimal: </p> <button onclick="copiar('resultadoHexadecimal')" class="copiar">Copiar</button>
+                <p id="resultadoBinario">Binário: </p> 
+                <button id="cpBinario" onclick="copiar('resultadoBinario')" class="copiar">Copiar</button>
+                <p id="resultadoHexadecimal">Hexadecimal: </p> 
+                <button id="cpHexadecimal" onclick="copiar('resultadoHexadecimal')" class="copiar">Copiar</button>
+                <br>
                 <button onclick="reset()" class="btn">Limpar</button>
             </div>
 
@@ -51,7 +54,6 @@
                 </div>
                 <button onclick="reset2()" class="btn">Limpar</button>
             </div>
-            <!-- teste -->
         </section>
     </main>
 
