@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/fundoMenu.png);
+    background-size: 100%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    /* atenção */
+}
+
+header ul, header li{
+    list-style: none;
+    
+}
+
+header nav{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+header a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+    transition:  all 0.2s;
+    border-bottom: 2px solid #ff9203;
+    
+}
+
+/* ajustar */
+nav a:hover{
+    color: aliceblue;
+    border-radius: 32px 64px;
+    background:linear-gradient(90deg,  #ff7504, #5f05f1);
+    scale: 1.2px;
+    cursor: pointer;
+}
+
+
+header nav>ul>li{
+    display: inline-block
+}
+
+header ul{
+    padding: 10px 5px;
+    margin: 0px 4px;
+    /* border: purple 2px solid; */
+}
+
+header li{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 12px;
+}
+header img{
+    width: 70px;
+    margin: 5px;
+    /* border: greenyellow 2px solid; */
+}
+
+header>ul{
+    position: fixed;
+}
+
+body, main{background-color: #1B1D25;}
+
+#home{
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: url(../img/ticket-2974645_1920.jpg);
+    background-size: 100%;
+    border-bottom: 2px solid #ff9203;
+}
+
+#home div{
+    display: flex;
+    flex-direction: row;
+}
+
+#home div p{
+    text-align: le;
+    color:white;
+    padding: 5px 15px;
+    background-color: #1b1d2567;
+}
+#home div img{
+    width: 50%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(236, 137, 44, 0.5));
+ 
+}
+
+#tituloEmAlta{
+    /* padding-top: 25px; */
+    text-align: center;
+    color: #d7d8dd;
+    font-size: 30px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-bottom: #F08112 2px solid;
+    border-radius: 32px;
+    background-color: rgba(247, 246, 245, 0.877);
+
+}
+
+#tituloEmAlta h1{
+    font-weight: 900;
+    background-image: url(../img/fogo01.gif);
+    background-size: 80px;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+}
+
+#boxFilmes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    /* border: 2px solid rgb(18, 21, 224); */
+    padding: 10px;
+
+}
+#boxFilmes div{
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    background-color: #0d1321; 
+    border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+#boxFilmes div img{
+    width: 70%;
+    /* height: 300px; */
+    
+}
+
+#boxFilmes div p{
+color: aliceblue;
+text-align: center;
+padding: 5px;
+}
+
+#boxFilmes div p:last-of-type {
+    text-align: justify;
+    margin: 10px;
+}
+
+#boxFilmes div h2{
+    text-align: center;
+    font-size: 30px; ;
+    color: #F08112;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+
+footer{
+    background-color: #1B1D25;
+}
+
+footer>section:first-of-type{
+    background-image: url(../img/footer.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer> section:first-of-type>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #1B1D25;
+    color: rgba(255, 99, 71, 0.61);
+    font-size: 15px;
+}
+
+footer>section:first-of-type>img{
+    width: 150px; 
+    filter: drop-shadow(0 0 10px rgba(236, 137, 44, 0.5));
+
+}
+
+footer h2{
+    color: tomato;
+}
+#redesSociais{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+#redesSociais img{
+    margin: 10px;
+}
+footer input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(5, 5, 5, 0.5);
+    background-color: aliceblue;
+}
+
+footer input:hover{
+    background-color: #afb0b6;
+
+}
+
+
+
+#redesSociais img:hover{
+    margin: 10px;
+    filter: drop-shadow(0 0 10px rgba(56, 8, 150, 0.932));
+    border-radius: 32px;
+    border: #5f05f1 2px solid;
+    cursor: pointer;
+
+}
+footer > section:nth-of-type(2) {
+    background-color: black;
+    color: orangered;
+    text-align: center;
+    border-radius: 32px;
+    padding: 10px 30px;
+}
+#botaocadastro{
+    transition: all 0.2s;
+    border-radius: 32px;
+}
+
+
+#botaocadastro:hover{
+    color: aliceblue;
+    border-radius: 32px;
+    background:linear-gradient(90deg,  #ff7504, #5f05f1);
+    cursor: pointer;
+    translate:0.51rem;
+}
+
+#icones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+#icones img{
+    width: 25px;
+    margin: 10px;
+    filter: drop-shadow(0 0 10px rgba(17, 131, 207, 0.932));
+    border-radius: 32px;
+}	
+@media screen and (min-width: 1000px){
+
+    header a{
+        font-size: 18px;
+        margin: 0 15px;
+    }
+
+    header img{
+        width: 100px;
+    }
+    
+    #home {
+        padding-top: 130px;
+
+    }
+    #home div{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+ 
+    #home div p{
+        margin: 20px;
+        font-size: 20px;
+        padding: 130px;
+    }
+
+    #home div img{
+        width: 30%;
+    }
+
+    #boxFilmes div{
+        height: 500px;
+        width: 25%;
+        padding: 5px;
+        transition: all 0.2s;
+        overflow: auto;
+        margin: 30px;
+    }
+
+    /* Estilizando a barra de rolagem */
+    #boxFilmes div::-webkit-scrollbar {
+        width: 10px; /* Largura da barra de rolagem */
+    }
+  
+    /* Estilizando o polegar da barra de rolagem */
+    #boxFilmes div::-webkit-scrollbar-thumb {
+        background-color: #6d6c6c; /* Cor do polegar */
+        border-radius: 5px; /* Borda arredondada do polegar */
+    }
+  
+    /* Removendo a barra de rolagem horizontal */
+    #boxFilmes div::-webkit-scrollbar-track {
+        display: none;
+    }
+
+
+    #boxFilmes div:hover{
+        scale: 1.08;
+        filter: drop-shadow(0 0 10px rgba(245, 245, 244, 0.5));
+        cursor: pointer;
+        border: solid white 2px;
+        background-color: #3f0c03f7;
+    }
+
+    #boxFilmes div p {
+        margin: 1px;
+        padding: 15px;
+    }
+
+    #boxFilmes div p:last-of-type{
+        margin:0 5px 10px 5px;
+
+    }
+
+    #boxFilmes div h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    #boxFilmes div img{
+        width: 65%;
+        
+    }
+    footer>section:first-of-type>img{
+       width: 25%;
+       filter: drop-shadow(0 0 5px rgba(235, 143, 5, 0.849));
+    }
+
+    footer> section:first-of-type>div{
+        filter: drop-shadow(0 0 5px rgba(245, 245, 245, 0.849));
+    }
+
+    footer>section>img{
+        width: 100%;
+        height: 500%;
+    }
+    #icones img{
+        width: 35px;
+        margin: 12px;
+    }
+    
+    #tituloEmAlta{
+        background-color: #0d1321;
+        background-image: url(../img/fundoMenu.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 32px;
+    }
+    #tituloEmAlta h1{
+        color: white;
+        font-size: 50px;
+        font-weight: 300;
+        background-image: none;
+
+    }
+}
