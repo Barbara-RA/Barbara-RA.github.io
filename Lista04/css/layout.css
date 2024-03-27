@@ -21,7 +21,6 @@ header{
     background-image: url(../img/fundoMenu.png);
     background-size: 100%;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    /* atenção */
 }
 
 header ul, header li{
@@ -46,7 +45,6 @@ header a{
     
 }
 
-/* ajustar */
 nav a:hover{
     color: aliceblue;
     border-radius: 32px 64px;
@@ -63,7 +61,6 @@ header nav>ul>li{
 header ul{
     padding: 10px 5px;
     margin: 0px 4px;
-    /* border: purple 2px solid; */
 }
 
 header li{
@@ -74,7 +71,6 @@ header li{
 header img{
     width: 70px;
     margin: 5px;
-    /* border: greenyellow 2px solid; */
 }
 
 header>ul{
@@ -112,7 +108,6 @@ body, main{background-color: #1B1D25;}
 }
 
 #tituloEmAlta{
-    /* padding-top: 25px; */
     text-align: center;
     color: #d7d8dd;
     font-size: 30px;
@@ -162,9 +157,7 @@ body, main{background-color: #1B1D25;}
 }
 
 #boxFilmes div img{
-    width: 70%;
-    /* height: 300px; */
-    
+    width: 70%;    
 }
 
 #boxFilmes div p{
@@ -384,7 +377,7 @@ footer > section:nth-of-type(2) {
     }
     #icones img{
         width: 35px;
-        margin: 12px;
+        margin: 9px;
     }
     
     #tituloEmAlta{
