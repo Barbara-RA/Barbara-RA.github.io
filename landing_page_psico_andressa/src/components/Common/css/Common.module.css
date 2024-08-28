@@ -1,0 +1,92 @@
+/* --------------------------------Button-------------------------------- */
+.button {
+    margin-top: 3.4375rem;
+    background-color: #5b3923;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.retentionSectionButton{
+    background: linear-gradient(135deg, #ffffff, #f4f4f4);
+    color: #6e0d0a;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: linear-gradient(150deg, #6e0d0a, #000000);
+    opacity: 84%;
+    color: #FFFFFF; /* Mantém a cor do texto branca */
+    font-size: 1.2em;
+    transform: translateY(-6px);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.homeButton {
+    background-color: #64090E;
+}
+
+.homeButton:hover {
+    background-color: #6E090E;
+}
+
+/* --------------------------------Title-------------------------------- */
+
+.titleDefault {
+    color: #5b3923;
+    font-size: 2rem;
+    margin-bottom: 5.4375rem;
+    text-align: center;
+}
+
+.titleBenefitsSection{
+    color: #6e0d0a;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.titleRetentionSection{
+    color: white;
+}
+
+.titleFAQSection{
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.titleMediaSection{
+    color:black;
+    text-align: left;
+
+}
+
+/* --------------------------------contentBlock-------------------------------- */
+.contentBlock {
+    padding: 0 1rem;
+}
+
+.contentBlock h3 {
+    color: #5b3923;
+    font-size: 1.5rem;
+    margin-top: 3.5625rem;
+    margin-bottom: 0.8125rem;
+}
+
+.contentBlock p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 5.0625rem;
+}

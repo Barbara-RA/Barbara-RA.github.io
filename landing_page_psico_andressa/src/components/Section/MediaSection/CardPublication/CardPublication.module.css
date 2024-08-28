@@ -1,0 +1,89 @@
+.imageCard{
+    width: 180px;
+    height: 220px;
+    /* position: fixed; */
+    /* margin: 20px; */
+    /* border: 1px solid brown; */
+}
+
+/*.imageCard > img{
+    display: block;
+} */
+
+/* .cardPubli{
+    display: block;
+}
+
+.card {
+    width: 160px;
+    height: 200px;
+    margin: 3rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(0.2);
+    color: maroon;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.cardWrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cardWrapper::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.cardWrapper p,
+.cardWrapper h3 {
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.card:hover {
+    filter: unset;
+}
+
+.card:hover > .cardWrapper::before {
+    width: 160px;
+    height: 200px;
+    opacity: 1;
+}
+
+.card:hover > .cardWrapper p,
+.card:hover > .cardWrapper h3{
+    opacity: 1;
+    visibility: visible;
+     font-size: 14px; 
+}
+
+.card:hover > .cardWrapper p{
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.card:hover > .cardWrapper h3{
+    font-size: 14px;
+    color: #6e0d0a;
+} */

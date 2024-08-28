@@ -1,0 +1,73 @@
+.aboutMeSection{
+    background-color: rgba(250, 246, 235, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aboutMeSection > div {
+    width: 75rem;
+}
+
+
+.aboutMeSection > div > div {
+    display: flex;
+}
+
+.aboutMeSection > div > div> div:nth-child(1), .aboutMeSection > div > div> div:nth-child(3) {
+    width: 35%;
+    /* border: 1px solid #59235b; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.aboutMeSection > div > div> div:nth-child(2){
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMeSection > div > div> div>div{
+    margin: 0px;
+    padding: 0px;
+    height: 50%;
+}
+
+.boxImages{
+    position: relative;
+    display: flex;
+   
+}
+
+.boxImages img{
+    position: absolute;
+    object-fit: cover;
+}
+
+.boxImages img:nth-child(1){
+    width: 75%;
+    margin-left: 20px;
+    top: 0;
+    
+}
+
+.boxImages img:nth-child(2){
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+}
+
+.centralizedContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.centralizedContent p{
+    
+    text-align: left;
+}

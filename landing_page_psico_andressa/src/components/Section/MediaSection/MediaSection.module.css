@@ -1,0 +1,39 @@
+.mediaSection {
+    color: #6e0d0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(248, 232, 188, 1);
+    /* border: 1px solid blue; */
+}
+
+.mediaSection>div{
+    display: flex;
+    /* border: 2px solid purple; */
+}
+
+.mediaSection>div>div:nth-child(1){
+    /* border: 1px solid rgb(208, 30, 89); */
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+.mediaSection>div>div>p{
+    margin: 20px 0;
+    width: 85%;
+    font-size: 20px; 
+    color: black;
+}
+
+.publications{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* .mediaSection>div>div>div{
+    border: 2px solid yellow;
+    align-items: center;
+} */
+

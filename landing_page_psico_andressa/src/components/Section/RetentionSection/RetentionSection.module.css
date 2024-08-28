@@ -1,0 +1,58 @@
+.retentionSection {
+    background-color: #6e0d0a;
+    color: white;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.retentionSection>div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.retentionSection p {
+    font-size: 20px;
+    margin: 0px 0px 70px 0px;
+    line-height: 1.6;
+    text-align: center;
+    position: relative;    
+}
+
+.firstLine {
+    font-weight: bold;
+}
+
+.retentionSection form {
+    display: inline-block;
+    margin-bottom: 150px;
+    min-height: 50px;
+}
+
+
+.flower {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    background: url('/images/retentionLogo.svg');
+    background-size: contain;
+}
+
+.flower-bottom-left {
+    bottom: -55px;
+    left: -18px;
+}
+
+.flower-top-right {
+    top: 10px;
+    right: -30px;
+    transform: scaleX(-1)
+}

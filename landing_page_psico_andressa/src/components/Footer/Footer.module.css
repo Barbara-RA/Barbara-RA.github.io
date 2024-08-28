@@ -1,0 +1,61 @@
+.footer{
+    background-color: rgba(248, 232, 188, 1);
+    /* background-color: #000; */
+}
+
+.footerTop{
+    background-color: #000;
+    /* border-radius: 200px 100px 0 0; */
+    width: 100%;
+    height: 200px;
+    border-radius: 100% 100% 0 0;
+    position: relative;
+    /* position: absolute; */
+    /* top: -1000px; Posiciona a caixa elíptica parcialmente sobre a seção anterior */
+    /* z-index: 1; Garante que ela fique sobre a seção anterior */
+}
+
+.footer>div:nth-child(2){
+    background-color: #000;
+    width: 100%;
+    height: 40vh;
+    /* margin: 148px; */
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid greenyellow; */
+    margin-top: -100px;
+    justify-content: space-evenly;
+}
+
+.footer>div:nth-child(2)>div:nth-child(1){
+    /* border: 1px solid yellow; */
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer>div:nth-child(2)>div:nth-child(2){
+    /* border: 1px solid yellow; */
+    margin-top: 20px;
+}
+
+.footer>div:nth-child(2)>div:nth-child(3){
+    margin-top: 20px;
+}
+
+.footer>div:nth-child(2)>div:nth-child(3)>ol{
+    /* border: 2px solid blue; */
+    padding: 10px 8px;
+    border-left: 0.5px solid white;
+}
+
+.footer>div:nth-child(2)>div:nth-child(3)>ol>li{
+    /* border: 2px solid purple; */
+    padding: 5px 5px 5px 0;
+}
+
+.footer>div:nth-child(2)>div:nth-child(3)>ol>li>a{
+    color: #fff;
+    text-decoration: none;
+}

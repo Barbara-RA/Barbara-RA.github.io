@@ -1,0 +1,28 @@
+.benefitsSection {
+    color: #6e0d0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 229, 216, 1);
+}
+
+
+.benefitsSection>div{
+    display: flex;
+}
+
+.benefitsSection>div>div>div>p{
+    margin: 20px 0;
+    width: 85%;
+    font-size: 20px; 
+    /* A fonte anterior era 18, mas estamos pensando em mudar para 20 de toda página
+    porém o container está quebrando */
+}
+
+.boxesGroupIcons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,6 @@
+.allPulications{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}

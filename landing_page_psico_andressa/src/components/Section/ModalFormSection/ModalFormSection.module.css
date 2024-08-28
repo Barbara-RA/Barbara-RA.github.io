@@ -1,0 +1,102 @@
+/* ModalFormSection.module.css */
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContainer {
+    background-color: #f8f4ec;
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    max-width: 900px;
+    display: flex;
+    padding: 20px;
+    position: relative;
+    z-index: 1001;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000; /* Certifica que o botão de fechar é visível em ambas as seções */
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: row; /* Mantém a diagramação em duas colunas */
+    width: 100%;
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+}
+
+.imageContainer {
+    width: 40%; /* Ajuste o tamanho conforme necessário */
+    background-image: url('path/to/your-image.jpg'); /* Defina o caminho da imagem aqui */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.formContainer {
+    flex: 1;
+    margin-left: 20px;
+    width: 60%; /* Ajusta a largura da coluna do formulário */
+}
+
+.formContainer h2 {
+    text-align: left;
+    color: #000; /* Certifica que o título seja consistente e legível */
+}
+
+.inputGroup {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Certifica contraste adequado */
+    text-align: left; /* Alinha os labels sempre à esquerda */
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff; /* Fundo branco para legibilidade */
+    color: #000; /* Cor do texto consistente */
+    text-align: left; /* Certifica que o texto nos inputs também fica alinhado à esquerda */
+}
+
+.submitButton {
+    background-color: #8a0303;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Botão ocupa a largura completa */
+}
+
+.submitButton:hover {
+    background-color: #6e0202;
+}
