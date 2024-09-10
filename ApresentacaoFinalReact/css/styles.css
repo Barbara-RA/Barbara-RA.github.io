@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #121212,#19112c, #090316, #3a0ca3); /* Degradê suave de preto para roxo */
+    color: #e0e0e0; /* Texto claro para contraste */
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.introducao {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.introducao h1 {
+    font-size: 2.5rem;
+    color: #bb86fc; /* Roxo claro para combinar com o tema */
+}
+
+.introducao p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #e0e0e0; /* Texto claro */
+}
+
+.team {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #bb86fc; /* Roxo claro */
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #1f1f1f; /* Fundo do card em um tom mais escuro */
+    border-radius: 15px;
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #bb86fc; /* Bordas roxas */
+    backdrop-filter: blur(10px);
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #e0e0e0; /* Texto claro */
+}
+
+.card p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.card a {
+    color: #bb86fc; /* Link roxo claro */
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    color: #ffff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Sombra mais forte */
+}
+
+.card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(187, 134, 252, 0.062); /* Efeito hover roxo claro */
+    pointer-events: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-container {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
