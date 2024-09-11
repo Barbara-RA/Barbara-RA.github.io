@@ -34,6 +34,13 @@ section {
     color: #e0e0e0; /* Texto claro */
 }
 
+.introducao a{
+    color: #eb7ff5; /* Link roxo claro */
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
 .team {
     text-align: center;
     margin-top: 30px;
