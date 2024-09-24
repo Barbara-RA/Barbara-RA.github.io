@@ -1,0 +1,38 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    color: green;
+    padding: 10px;
+}
+
+p{
+    color: red;
+}
+
+label{
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+}
+
+div{
+    
+    text-align: left ;
+}
+
+input[type="button"]{
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

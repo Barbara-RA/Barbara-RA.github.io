@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.headerTecnologias{
+    background-color: black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.headerTecnologias > div{
+    height: 180px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerTecnologias h1{
+    font-size: 25px;
+}
+
+.headerTecnologias p{
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+header ul, header li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    font-size: 15px;
+}
+
+
+.Menu ul li{
+    display: inline-block
+}
+
+.Menu ul{
+    padding: 10px 5px;
+}
+
+.Menu li{
+    text-decoration: none;
+    font-size: 12px;
+    
+}
+.Menu a{
+    padding: 30px 25px;
+
+}
+
+.Menu a:hover{
+    border-top: 1px solid red;
+    border-bottom: 1px solid yellow;
+    box-sizing: border-box;
+}
+.Menu{
+    background-color: rgb(3, 3, 97);
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Menu nav{
+    width: 1200px; 
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding:30px ;
+    
+}
+
+main section{
+    background-color: rgb(62, 62, 62);
+    display: flex;
+    justify-content: center;
+    border-bottom: 10px solid  rgb(62, 62, 62);
+}
+
+.manutencao > div,.portifolio > div,.promocoes>div{
+    width: 1200px;
+    background-color: white;
+}
+
+
+.manutencao > div, .portifolio > div,.promocoes > div >div, .parceiroPatrocinadores{
+    display: flex;
+    flex-direction: row;
+}
+
+.manutencao > div > div{
+    padding: 20px;
+}
+.manutencao img{
+    width: 700px;
+}
+
+.manutencao h1{
+    color: red;
+}
+
+.manutencao p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+
+.portifolio > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+    padding-bottom: 15px;
+    
+
+}
+
+.portifolio h2{
+    text-align: center;
+    color: rgb(3, 3, 97);
+    font-size: 25px;
+    
+}
+
+.portifolio p{
+    text-align: justify;
+}
+.portifolio img{
+    width: 200px;
+    transition: transform 0.3s;   
+    padding: 30px 0px ;
+}
+
+.portifolio img:hover{
+    transform: scale(1.2);
+}
+
+.promocoes > div >div{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.promocoes h1{
+    color: red;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.promocoes p{
+    text-align: justify;
+}
+
+
+.parceiroPatrocinadores{
+    background-color: rgb(62, 62, 62) ;
+    justify-content: center;
+    border: none;
+
+}
+
+.parceiroPatrocinadores >div{
+    width: 1200px;
+    background-color: rgb(187, 186, 186);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.parceiroPatrocinadores > div > div{
+ margin: 20px 100px;
+}
+
+.parceiroPatrocinadores > div > div:nth-last-of-type(1){
+    margin-left: 400px;
+    
+}
+
+.parceiroPatrocinadores h2{
+    padding-bottom: 10px;
+    text-align: left;
+    margin-left: -40px;
+}
+
+.parceiroPatrocinadores li{
+    padding: 2px;
+    padding-left: 10px;
+
+}
+
+footer p{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+
+}

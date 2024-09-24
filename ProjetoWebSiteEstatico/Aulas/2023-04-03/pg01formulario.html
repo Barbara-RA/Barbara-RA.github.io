@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <form>
+            <label for="txtNome">Nome:</label>
+            <br>
+            <input id="txtNome" type="text" maxlength="25" placeholder="Nome Completo">
+            <br>
+            <br>
+            <label for="txtSenha">Senha:</label><br>
+            <input id="txtSenha" type="password" maxlength="8" placeholder="No máximo 8 caracteres">
+            <br>
+            <br>
+            <label for="selectUf">UF</label>
+            <select id="selectUf">
+                <option>Selecione</option>
+                <option>RO</option>
+                <option>AC</option>
+                <option>AL</option>
+                <option>AM</option>
+                <option>AP</option>
+                <option>MG</option>
+                <option>BA</option>
+            </select>
+
+            <br>
+            <br>
+            <fieldset>
+                <legend>Sexo</legend>
+                <br>
+                <input id="sexMasc" type="radio" name="sexo">
+                <label for="sexMasc">Masculino</label>
+
+
+                <input id="sexFem" type="radio" name="sexo">
+                <label for="sexFem">Feminino</label>
+            </fieldset>
+
+            <br>
+            <br>
+            <fieldset>
+                <legend> Hobbies:</legend>
+                <input type="checkbox" id="Video-Game">
+                <label for="Video-Game">Video-Game</label>
+                <br>
+                <input type="checkbox" id="Cinema">
+                <label for="Cinema">Cinema</label>
+                <br>
+                <input type="checkbox" id="Viajar">
+                <label for="Viajar">Viajar</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="Dtnasc">Data de Nascimento:</label>
+                <input id="Dtnasc" type="date">
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="url">URL Site</label>
+                <input type="url" id="url" required>
+            </fieldset>
+
+            <br>
+            <br>
+            <label for="comente">Comentarios:</label>
+            <textarea id="comente" cols="30" rows="10" style="width: 100%;"></textarea>
+
+
+
+
+            <br>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Cadastrar">
+
+
+
+
+
+
+
+
+
+        </form>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.secao01{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.secao02{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+}
+
+.secao02 div{
+    border: 1px solid  red;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.secao03 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+
+}
+
+.secao03 > div{
+    border: 3px solid red;
+}
+
+.secao03 > div > div{
+    border: 2px solid blue;
+}

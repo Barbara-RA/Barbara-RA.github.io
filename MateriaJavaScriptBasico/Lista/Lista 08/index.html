@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>É Par?</title>
+</head>
+<body>
+    <header>
+        <div>
+            <form>
+                
+                <label for="nivel">Nível:</label>
+                <select id="nivel" name="nivel">
+                    <option value="selecione">Selecione o nível</option>
+                    <option value="facil">Fácil</option>
+                    <option value="medio">Médio</option>
+                    <option value="dificil">Difícil</option>
+                </select>
+                
+            </form>
+            <img src="img/velocimetro (1).png" alt="" width="45px">
+        </div>
+
+        <div>
+            <img src="img/tempo.png" alt="" width="50px">
+            <p>Tempo: <span id="tempo"></span></p>
+        </div>
+
+        <div class="btnSuperior">
+            <input type="button" id="iniciar" value="Iniciar">
+            <input type="button" id="pausar" value="Pausar">
+            <input type="button" id="parar" value="Parar">
+        </div>
+        
+    </header>
+
+    <main>
+        <p id="numero"></p>
+    </main>
+
+    <footer>
+        <div class="">
+            <img src="img/lista-de-controle.png" alt="" width="30px">
+            <p>ACERTOS: <span id="acertos"></span> (<span id="percentual"></span>)%</p>
+        </div>
+        <div>
+            <img src="img/perto.png" alt="" width="30px">
+            <p>ERROS: <span id="erros"></span></p>
+        </div>
+
+        <div>
+            <img src="img/icons8-sorteio-96.png" alt="" width="50px">
+            <p>NÚMEROS PARES SORTEADOS: <span id="sorteados"></span></p>
+        </div>
+        
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+div{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+div > div{
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 5px;
+}

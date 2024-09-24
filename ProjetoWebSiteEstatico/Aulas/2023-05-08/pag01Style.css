@@ -1,0 +1,44 @@
+header a{
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+    background-color: black;
+    text-align: right;
+}
+
+li{
+    display: inline-block;   
+}
+
+header a:link, 
+header a:visited{
+    color: white;
+}
+
+header a:hover{
+    background-color: white;
+    color: black;
+}
+
+header h1, h2{
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+header h1{
+    background-color: black;
+}
+
+header h2{
+    background-color: rgb(60, 59, 59);
+}
+
+header *{
+    margin: 0px;
+}

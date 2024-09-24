@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gluten', sans-serif;
+    background-color: #f0f0f0;
+    font-size: 20px;
+    color: #ffffff;
+    background-image: url('../img/universe.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    min-height: calc(100vh - 120px); /* Ajustado para as alturas do cabeçalho e do rodapé */
+    position: relative;
+}
+
+header {
+    background: linear-gradient(to right, #ff69b4, #87cefa);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header>div, footer>div {
+    display: flex;
+}
+
+header img, footer img {
+    margin: 0px 3px;
+}
+
+header>div, footer>div {
+    margin: 10px 50px;
+}
+
+div {
+    width: 20%;
+}
+
+span {
+    color: #eeeaec;
+    font-size: 38px;
+}
+
+.btnSuperior {
+    width: 350px;
+}
+
+select {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    margin: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    padding-top: 60px;
+}
+
+main p {
+    font-size: 500px;
+    color: rgb(231, 18, 213);
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(to right, #ff69b4, #87cefa);
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#percentual {
+    font-size: 20px;
+}
+
+input[type="button"] {
+    background: #ff69b4;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Gluten', sans-serif;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+}
+
+input[type="button"]:hover {
+    background: #87cefa;
+    transform: scale(1.2);
+}
+
+.acerto {
+    color: green;
+}
+
+.erro {
+    color: rgb(167, 45, 14);
+}
+
+
+
+/* --------------------------------------------------------------------------------------- */
+
+
+.cadastro{
+    background-image: url(../img/espaçoRosa.jpg);
+    background-size: cover;
+    color: #ffffff; 
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center; 
+}
+
+.login{
+    background-image: url(../img/steven-universe-beach-house-e7h33boym7grgxsx.jpg);
+    background-size: cover;
+    color: #ffffff; 
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+
+.cadastro .cadastro-container {
+    background-color: #0d1321af; 
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    margin: 50px auto;
+}
+
+.login .login-container {
+    background-color: #0d1321b6; 
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    margin: 50px auto;
+}
+
+.cadastro h2{
+    color: rgb(198, 26, 241);
+    text-align: center;
+    padding: 10px;
+}
+
+.login h2 {
+    color: rgb(240, 42, 151);
+    text-align: center;
+    padding: 10px;
+}
+
+.cadastro form, .login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro input, .login input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff; 
+    border-radius: 5px;
+    background-color: #00121e; 
+    color: #ffffff; 
+}
+
+.cadastro button{
+    padding: 10px;
+    background-color: rgb(134, 41, 255); 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.login button {
+    padding: 10px;
+    background-color: rgb(240, 42, 151); 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cadastro button:hover{
+    background-color: rgb(240, 40, 173);
+}
+.login button:hover {
+    background-color: rgb(85, 18, 59);
+}
+
+.cadastro .signup-link, .login .signup-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.cadastro .signup-link:hover, .login .signup-link:hover {
+    text-decoration: underline;
+}
+
+#sair{
+    background-color: rgb(240, 42, 42); 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.1s;
+}
+
+#sair:hover{
+    background-color: rgb(85, 18, 59);
+    transform: perspective(1px) scale(1.1);
+}
+
+#sair a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}

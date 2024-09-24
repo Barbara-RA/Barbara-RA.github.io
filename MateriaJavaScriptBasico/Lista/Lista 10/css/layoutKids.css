@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    background-image: url(../img/steven-universe-beach-house-e7h33boym7grgxsx.jpg);
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.login .login-container {
+    background-color: #ffcc00; /* Paw Patrol Yellow */
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    margin: 50px auto;
+}
+
+.login h2 {
+    color: #00539c; /* Paw Patrol Blue */
+    text-align: center;
+    padding: 10px;
+}
+
+.login input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #cc0000; /* Paw Patrol Red */
+    border-radius: 5px;
+    background-color: #fff;
+    color: #cc0000; /* Paw Patrol Red */
+}
+
+.login button {
+    padding: 10px;
+    background-color: #00539c; /* Paw Patrol Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.login button:hover {
+    background-color: #002855; /* Darker Paw Patrol Blue */
+}
+
+.login .signup-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #cc0000; /* Paw Patrol Red */
+}
+
+.login .signup-link:hover {
+    text-decoration: underline;
+}
+
+#sair {
+    background-color: #00539c; /* Paw Patrol Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#sair:hover {
+    background-color: #002855; /* Darker Paw Patrol Blue */
+}
+
+#sair a:visited {
+    color: #fff;
+    text-decoration: none;
+}

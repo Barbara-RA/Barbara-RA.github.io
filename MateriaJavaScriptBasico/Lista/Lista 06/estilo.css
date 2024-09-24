@@ -1,0 +1,39 @@
+/* Reset de estilos padrão para evitar inconsistências entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Defina a cor de fundo da página */
+body {
+    background-color: #f0f0f0; /* Cinza claro */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do cabeçalho (h1) */
+h1 {
+    background-color: #0074d9; /* Azul */
+    color: #fff; /* Branco */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Espaço inferior para distanciar dos parágrafos */
+}
+
+/* Estilo dos links */
+p a {
+    color: #333; /* Cinza escuro */
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* Mudar a cor do link quando o mouse passar por cima */
+p a:hover {
+    color: #0074d9; /* Azul */
+}
+
+/* Estilo dos parágrafos */
+p {
+    font-size: 18px; /* Tamanho da fonte aumentado */
+    margin-bottom: 10px; /* Espaço inferior para distanciar dos parágrafos */
+}

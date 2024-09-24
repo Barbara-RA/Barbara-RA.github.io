@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(212, 211, 211);
+}
+
+.projetos img{
+    width: 100%;
+}
+
+.projetos h2{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.projetos p{
+    text-align: justify;
+}
+
+.projetos div{
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width:1000px) {
+    .projetos{
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .projetos div{
+        padding: 40px;
+    }
+
+    .projetos h2{
+        font-size: 28px;
+    }
+    
+
+
+}

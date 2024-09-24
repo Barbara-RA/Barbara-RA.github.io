@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+header *{
+    margin: 0px;
+    padding: 0px;
+}
+
+header ul{
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+    background-color: #006680;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header a:link, header a:visited{
+    color: white;
+}
+
+header a:hover{
+    background-color: white;
+    color: black;
+}
+
+header img{
+    width: 100%;
+}
+
+header h1{
+    color: white;
+    transition: all 0.5s;
+
+}
+
+header h1:hover{
+    letter-spacing: 5px;
+}
+
+header h2{
+    color: yellow;
+}
+
+header h1, header h2{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    text-align: center;
+    margin: 20px 0px;
+
+}
+
+body, footer{
+    font-family: calibri;
+    background-color: black;
+}
+body{
+    margin: 0px;
+}
+
+main section{
+    background-color: white;
+    padding: 30px;
+    width: 1000px;
+    margin: auto;
+    text-align: justify;
+}
+
+main section:nth-child(odd) {
+    background-color: white;
+}
+main section:nth-child(even) {
+    background-color: rgb(218, 216, 216);
+}
+
+main a:link, main a:visited{
+    color: blue;
+}
+
+main p span{
+    font-weight: bold;
+    color: red;
+
+}
+
+main li{
+    font-style: italic;
+}
+
+
+footer p{
+    color: white;
+    text-align: center;
+    padding: 40px;
+}

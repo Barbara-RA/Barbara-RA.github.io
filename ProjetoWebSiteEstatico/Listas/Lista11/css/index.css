@@ -1,0 +1,21 @@
+ul{
+    background-color: #e0e5e7;
+    border-right: 10px solid #50a320;
+    border-left: 10px solid#50a320;
+    padding: 20px;
+    margin: 50px ;
+}
+h1{
+    font-size: 30px;
+    border-bottom: 1px solid #50a320;
+}
+u{
+    color: blue;
+}
+p{
+    text-decoration: underline;
+}
+
+*{
+    font-family: Tahoma;
+}

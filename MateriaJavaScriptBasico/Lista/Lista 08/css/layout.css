@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Gluten', sans-serif;
+    background-color: #f0f0f0;
+    font-size: 20px;
+    color: #000;
+    background: linear-gradient(to right, #004d408c, #81c784, #fff);
+    
+}
+
+header {
+    background: linear-gradient(to right, #004d408c, #81c784, #fff);
+    color: #000; /* Cor do texto para contraste */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>div, footer>div{
+    display: flex;
+}
+
+header img, footer img{
+    margin: 0px 3px;
+}
+header>div, footer>div {
+    margin: 10px 50px;
+}
+
+div{
+    width: 20%;
+}
+
+span{
+    color: #004d40;
+    font-size: 38px;
+}
+
+.btnSuperior{
+    width: 350px;
+}
+
+select {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    background-image: url('../img/White-abstract-background-wallpaper-illustration-e1656162692761.jpg'); /* Substituí o URL da imagem */
+    background-repeat: no-repeat;
+    background-size: cover; /* Usei cover para ajustar a imagem ao tamanho da tela */
+    
+}
+
+main p {
+    padding-top: 60px;
+    font-size: 500px;
+    color: rgba(37, 43, 36, 0.877); /* Cor do texto da imagem */
+}
+
+footer {
+    background: linear-gradient(to right, #004d408c, #81c784, #fff); /* Degrade verde escuro, verde claro, branco */
+    color: #000; /* Cor do texto para contraste */
+    padding: 10px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#percentual{
+    font-size: 20px;
+}
+
+input[type="button"] {
+    background: #004d40; /* Verde escuro */
+    color: #fff;
+    border: 1px solid #fff; /* Adicionei uma borda branca */
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Gluten', sans-serif;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+}
+
+input[type="button"]:hover {
+    background: #81c784; /* Verde claro ao passar o mouse */
+    transform: scale(1.2);
+}
+
+
+
+.acerto{
+    color: green;
+
+}
+
+
+.erro{
+    color: rgb(167, 45, 14);
+}
+
+
+/* --------------------------------------------------------------------------------------- */

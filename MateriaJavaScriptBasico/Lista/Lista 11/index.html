@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>Lista 11</title>
+</head>
+<body>
+    <form action="">
+        <h1> LISTA DE EXERCÍCIOS</h1>
+        <h2>Expressão Regular - Aluna: Bárbara Ramos</h2>
+        <label for="">A - Data de nascimento:</label>
+        <input type="text" id="dtNascimento" onKeyPress="inserirMascara('dtNascimento','dd/mm/aaaa')" value="10/08/94">
+        <input type="button" id="validaDtNascimento" value="Validar">
+        <br>
+        <br>
+        <label for="">B - CPF</label>
+        <input type="text" id="cpf" onKeyPress="inserirMascara('cpf','000.000.000-00')" value="123.456.789-10">
+        <input type="button" id="validaCpf" value="Validar">
+        <br>
+        <br>
+        <label for="">C - Matrícula do Aluno:</label>
+        <input type="text" id="matricula" value="IFTM-123/456-71">
+        <input type="button" id="validaMatricula" value="Validar">
+        <br>
+        <br>
+        <label for="">D - Código da disciplina:</label>
+        <input type="text" id="disciplina" onKeyPress="inserirMascara('disciplina','MT-00.000-IFTM')" value="mt-12.345-IFTM">
+        <input type="button" id="validaDisciplina" value="Validar">
+        <br>
+        <br>
+        <label for="">E - Código da disciplina(V2):</label>
+        <input type="text" id="disciplina2" onKeyPress="inserirMascara('disciplina2','MT-00.000-IFTM')" value="MT-58.561-IFTM" >
+        <input type="button" id="validaDisciplina2" value="Validar">
+        <br>
+        <br>
+        <label for="">F - Código da disciplina(V3):</label>
+        <input type="text" id="disciplina3" value="M T-99.137-I F T M" >
+        <input type="button" id="validaDisciplina3" value="Validar">
+        <br>
+        <br>
+        <label for="">G - Campus do IFTM:</label>
+        <input type="text" id="campus" value="IFTM campus Uberlândia" >
+        <input type="button" id="validacampus" value="Validar">
+        <br>
+        <br>
+        <label for="">H - Telefone:</label>
+        <input type="text" id="telefone" onKeyPress="inserirMascara('telefone','+00(00)00000-0000')"value="+55(34)91234-5678" >
+        <input type="button" id="validaTelefone" value="Validar">
+        <br>
+        <br>
+        <label for="">I - Telefone(V2):</label>
+        <input type="text" id="telefone2" value="(34) 91234-5678" >
+        <input type="button" id="validaTelefone2" value="Validar">
+        <br>
+        <br>
+        <label for="">J - Altura:</label>
+        <input type="text" id="altura" value="1,75" >
+        <input type="button" id="validaAltura" value="Validar">
+        <br>
+        <br>
+        <label for="">K - Faturamento:</label>
+        <input type="text" id="faturamento" value="R$50,00" >
+        <input type="button" id="validaFaturamento" value="Validar">
+        <br>
+        <br>
+        <label for="">L - Cronômetro:</label>
+        <input type="text" id="cronometro" onKeyPress="inserirMascara('cronometro','HH:MM:SS:CC')" value="13:32:26:12" >
+        <input type="button" id="validaCronometro" value="Validar">
+        
+    </form>
+    
+    <script src="js/jMaskWiFi.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

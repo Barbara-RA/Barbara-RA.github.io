@@ -1,0 +1,19 @@
+a:link, a:visited{
+    background-color:black ;
+    color: white;
+}
+a:hover {
+    color: yellow;
+}
+/* a:visited{
+    background-color: green;
+    color: ;
+} */
+a:active {
+    background-color: rgb(74, 74, 74);
+    color:white;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+}

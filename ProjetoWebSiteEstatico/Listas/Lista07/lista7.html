@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Listas/lista 07/forma.png" type="image/x-icon">
+    <title>Cadastro de
+        clientes</title>
+</head>
+<body style="background-color: rgba(246, 246, 246, 0.942); font-family: calibri;">
+    <h1 style="font-size: 16; text-align: center;"> Cadastro de clientes</h1>
+    <p style="color: red;"><b>*Todos os campos são de preenchimento obrigatório</b></p>
+    <form>
+        <fieldset   >
+            <legend style="color: blue;" ><b>Dados Pessoais</b></legend>
+            <br>
+            <label for="txtNome"><b>Nome:</b></label>
+            <br>
+            <input type="text" id="txtNome" maxlength="30" placeholder="Digite o nome completo" required>
+
+            <br>
+            <br>
+            <label for="dateNascim"><b>Data de nascimento:</b></label>
+            <br>
+            <input type="date" id="dateNascim" required>
+            <br>
+            <br>
+
+            <label for="sexo"><b>Sexo:</b></label>
+            <br>
+            <input type="radio" id="sexMasc" name="sexo">
+            <label for="sexMasc">Masculino</label required>
+
+            <input type="radio" id="sexFem" name="sexo" required>
+            <label for="sexFem">Feminino</label>
+
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend style="color: blue;" ><b>Informações de contato</b></legend>
+            <br>
+            <label for="email"><b>E-mail:</b></label>
+            <br>
+            <input type="email" id="email" required placeholder="Digite um e-mail válido">
+            <br>
+            <br>
+            <label for="telCel"><b>Telefone Celular:</b></label>
+            <br>
+            <input type="tel" maxlength="9" id="telCel" placeholder="Apenas números (máx: 9)" required>
+            <br>
+            <br>
+            <label for="urlSite"><b>Website pessoal:</b></label>
+            <br>
+            <input type="url" required id="urlSite" placeholder=" Informe a URL do Site">
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend style="color: blue;" ><b>Localização</b></legend>
+            <br>
+            <label for="txtEnder"><b>Endereço:</b></label>
+            <br>
+            <input type="text" maxlength="50" placeholder="Nome Rua/Av./etc" id="txtEnder" required>
+            <br>
+            <br>
+            <label for="numEnd"><b>Número:</b></label>
+            <br>
+            <input type="number" id="numEnd" required placeholder="1 e 9999" min="1" max="9999">
+            <br>
+            <br>
+            <label for="cidade"><b>Cidade:</b></label>
+            <br>
+            <input type="text" name="cidade" id="cidade" maxlength="20" required placeholder="Nome da cidade">
+            <br>
+            <br>
+            <label for="estado"><b>Estado:</b></label>
+            <br>
+            <select id="estado" required="true">
+                <option value="">Selecione</option>
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option>
+            </select>
+            <br>
+            <br>
+        </fieldset>
+
+        <br>
+        <br>
+        <center>
+        <input type="submit" value="Cadastrar" style="color: green;">
+        <input type="reset" value="Limpar" style="color: red;">        
+        </center>
+    </form>
+    <br>
+    <br>
+</body>
+</html>

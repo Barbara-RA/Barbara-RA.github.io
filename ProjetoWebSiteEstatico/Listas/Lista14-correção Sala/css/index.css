@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+padding: 70px;
+}
+
+header h1{
+    font-size: 24px;
+    color: #C65300;
+    font-weight: 400;
+    text-align: center;
+    background-image: url('../imagens/logo.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    width: 320px;
+    margin: auto;
+    /* para que a caixa fique no centro automaticamente */
+    padding: 10px;
+    background-position: right center;
+    padding-right: 30px;
+
+}
+
+.chamada{
+    text-align: center;
+}
+
+.chamada h2{
+    font-size: 38px;
+    margin: 25px 0px 60px 0px;
+}
+
+.chamada p{
+    font-size: 16px;
+    width: 750px;
+    margin: auto;
+}
+
+
+input{
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+}
+
+input[type="email"]{
+    background-color: #EEEEEE;
+    outline: none;
+    width: 75%;
+    
+}
+
+input[type="button"]{
+    background-color: #C65300;
+    color: white;
+    width: 25%;
+}
+
+input[type="button"]:hover{
+    cursor: pointer;
+    background-color: #f6ba8e;
+
+}
+
+input[type="button"]:active{
+    cursor: pointer;
+    background-color: #4f2202;
+    ;
+
+}
+
+input[type="button"]:nth-child(2){
+    margin-bottom: 180px;
+
+}
+
+form{
+    width: 600px;
+    border: #C65300;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.tituloDescricaoSecao{
+    text-align: center;
+}
+
+.tituloDescricaoSecao h2{
+   font-size: 30;
+}
+
+hr{
+width: 150px;
+margin: auto;
+border: 1px solid #C65300;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+
+main section{
+    padding: 110px;
+    background-image: url("../imagens/logoEmpresa.png");
+    background-repeat: no-repeat;
+    background-position: 100% 20px;
+    
+}
+
+main section:nth-child(1){
+    padding: 110px;
+    background-image:none;  
+}
+
+
+main section:nth-child(even){
+    background-color: #EEEEEE;
+}
+
+.boxExterna{
+    width: 1000px;
+    margin: auto;
+    overflow: auto;
+}
+
+.boxExterna div{
+    float: left;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.colunas_3 div{
+    width: 33.33%;
+}
+
+.colunas_2 div{
+    width:50.00%;
+}
+
+.boxMentor div:nth-child(1){
+    width: 70%;
+    text-align: center;
+    font-size: 17px;
+    padding: 84.5PX 45px;
+}
+
+.boxMentor div:nth-child(2){
+    width: 30%;
+    text-align: center;
+    padding: 0;
+}
+
+.boxMentor img{
+    width: 100%;
+    border-radius: 10%;
+}
+
+.boxTreinamento{
+    text-align: center;
+}
+
+.boxTreinamento ul{
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+}
+
+.boxTreinamento p{
+    color: #B10000;
+    font-weight: 700;
+}
+
+.boxTreinamento h3{
+    text-align: left;
+    margin: 8px 0 42px 0;
+}
+
+.boxTreinamento div h3{
+    text-align: center;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.boxTreinamento div:nth-child(1) h3{
+    color: #E34C26;
+}
+
+.boxTreinamento div:nth-child(2) h3{
+    color: #3B9ADB;
+}
+
+.boxTreinamento div:nth-child(3) h3{
+    color: #E9C010;
+}
+
+/* trocar imagem bulet */
+.boxTreinamento li{
+    list-style-type:"\2713" ;
+    padding-left: 10px;
+
+}
+
+.boxProjeto{
+    text-align: center;
+}
+
+.boxProjeto img{
+    width: 95%;
+}
+
+.boxProjeto h3{
+    margin: 20px 0px;
+    color: #C65300;
+}
+
+.boxProjeto p{
+    font-size: 14px;
+}
+
+.boxAvaliacao h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #C65300;
+  
+}
+
+.boxAvaliacao p{
+    text-align: justify;
+    padding-bottom: 16px;
+    margin:20px;
+    color: #000000;
+    
+}
+
+.boxAvaliacao div{
+    width: 27.33%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    box-shadow: 4px 4px 9px grey;
+    padding: 30px;
+}
+
+
+.boxAvaliacao img:nth-child(1){
+    width: 50%;
+    position: relative;
+    float: left;
+    margin: -90px -70px ;    
+}
+
+.boxAvaliacao img:nth-child(5){
+    position: relative;
+    float: left;
+    margin-left: 70px ;
+}
+
+.maisAlunos{
+    text-align: center;
+    padding: 70px;
+   
+}
+.maisAlunos p{
+    margin-top: 16px;
+    padding: 0px 40px;
+}
+
+
+footer{
+    background-color: black;
+    padding: 50px;
+    text-align: center;
+}
+
+footer img{
+    width: 2%;
+    text-align: center;
+}

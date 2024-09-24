@@ -1,0 +1,8 @@
+div{
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+    border-radius: 200px;
+    text-align: center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,16 @@
+span:first-child {
+    background-color: lime;
+}
+
+.nome:focus {
+    color: red;
+} 
+
+.sobrenome:focus {
+    color: lime;
+}
+
+main :only-child {
+    color: red;
+  }
+  

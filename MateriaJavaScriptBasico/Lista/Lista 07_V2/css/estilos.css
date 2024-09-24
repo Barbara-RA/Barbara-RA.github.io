@@ -1,0 +1,130 @@
+* {
+	box-sizing: border-box;
+	color: green;
+}
+fieldset {
+	width: 400px;
+	margin:auto;
+	border:2px solid green;
+}
+legend {
+	text-align: center;
+	padding: 10px;
+}
+input[type="button"] {
+	display:block;
+	width: 50%;
+	margin:auto;     
+	margin-top: 20px;
+	background-color: green;
+	color: white;
+	border:none;
+	outline: none;
+	padding: 5px;
+	border-radius: 5px;
+	cursor:pointer;
+	transition: 0,99s;
+}
+
+input[type="button"]:hover{
+	transform: scale(0.95) ;
+	background-color: red;
+}
+
+input[type="text"] {
+	width:70%;
+	border:none;
+	border-bottom:2px solid green;
+	outline:none;
+}
+fieldset {
+    border: 3px solid green;
+    padding:30px;
+    width:450px;
+    color: green;
+    margin:auto;
+}
+ 
+legend {
+    text-align: center;
+    font-size: 20px;
+}     
+
+input[type="button"] {
+    background-color: green;
+    color:white;
+    border:none;
+    outline: none;
+    padding:10px;
+    display: block;
+    width:50%;
+    margin:auto;    
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+fieldset input[type="text"] {
+    border:none;
+    border-bottom: 2px solid green;
+    width:70%;
+    outline: none;
+    color: green;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+}
+.descricao {
+    color:red;
+    font-size: 20px;
+    text-align: center;
+}
+img {
+	width:100px;
+}
+.boxInterna {
+	width: 150px;
+	float:left;
+	text-align:center;
+}
+
+
+.boxInterna input[type="button"] {
+	width: 150px;
+}
+.boxFora {
+	width: 770px;
+	margin:auto;
+}
+.msgErro{
+	color: black;
+	margin: auto;
+}
+
+.msgErro>h1{
+	color: red;
+	font-size: 25px;
+}
+
+.msgErro>p>a{
+	color: blue;
+	font-size: 16px;
+	transform: toUpperCase;
+}
+
+.visivel{
+	display: block;
+}
+
+.invisivel{
+	display: none;
+}
+
+a{
+	color: blue;
+}
+
+.menu>div>p>a:visited{
+	color: blue;
+}

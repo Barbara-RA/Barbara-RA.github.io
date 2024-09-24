@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.projetos{
+    padding: 20px;
+    background-color: rgb(212, 211, 211);
+}
+
+.projetos img{
+    width: 100%;
+}
+
+.projetos h2{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.projetos p{
+    text-align: justify;
+}
+
+.projetos div{
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width:1000px) {
+    .projetos{
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .projetos > div{
+        padding: 40px;
+        margin: 1200px;
+        margin: auto;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .projetos h2{
+        font-size: 28px;
+    }
+
+    .projetos > div > div{
+        padding: 20px;
+    }
+
+
+
+
+}

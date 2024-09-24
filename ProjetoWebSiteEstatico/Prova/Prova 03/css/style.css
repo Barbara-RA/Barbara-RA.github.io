@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+nav{
+    text-align: center;
+    width: 1200px; 
+    margin: auto;
+}
+
+
+header ul, header li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 400px;
+    text-align: right;
+}
+
+a:visited{
+    color: white;
+}
+
+header ul li{
+    display: inline-block
+
+}
+
+header ul{
+    display: flex;
+    justify-content: end; 
+}
+
+header li{
+    text-decoration: none;
+    padding: 20px;
+}
+
+input{
+    font-size: 12px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    text-align: center;
+    padding: 8px 20px;
+    font-weight: 700;
+    
+}
+
+input:hover{
+    background-color: grey;
+    color: black;
+    border: 1px solid black;
+
+}
+
+input:active{
+    transform: scale(0.9);
+
+}
+
+.maisDe65 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: black;
+    background-image: url(../img/topo.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+   
+}
+.maisDe65 > div{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+        
+}
+
+.maisDe65 > div> div{
+    width: 640px;
+    height: 400px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 60px 0px;
+}
+
+.maisDe65 img{
+    width: 50px;
+}
+
+.maisDe65 hr{
+    width: 450px;
+    border: 5px solid black;
+
+}
+
+.maisDe65 h1{
+    font-size: 30px;
+
+
+}
+.maisDe65 p{
+    padding: 20px 0px;
+    text-align: justify;
+}
+.maisDe65 input{
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+section:nth-child(even){
+    background-color: rgb(234, 233, 233);
+}
+
+section > div{
+    width: 1200px;
+    padding: 30px 0px;
+}
+
+.plataformaAposentadoria > div> div{
+    width: 900px;
+    justify-content: start;
+}
+
+.plataformaAposentadoria h1, .plataformaAposentadoria p{
+    padding: 20px;
+}
+
+.plataformaAposentadoria input{
+    margin-left: 20px;
+
+}
+
+.seguranca > div >div{
+    display: flex;
+    flex-direction: row;
+    padding: 10px
+    
+}
+
+.seguranca > div >div> div{
+    margin: 15px; 
+}
+
+.seguranca > div >div> div p, .apresentacao p{
+    padding-bottom: 20px;
+}
+
+.seguranca h1{
+    padding: 20px;
+}
+
+.seguranca p, .apresentacao > div{
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.apresentacao> div{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;   
+}
+
+.apresentacao> div> div{
+    margin: 0px 15px;
+}
+
+.apresentacao h2{
+    padding: 20px 0px;
+}
+
+.compromissos > div{
+    display: flex;
+    flex-direction: row;
+}
+
+.compromissos > div> div:nth-last-child(2){
+    padding: 20px;
+    text-align: justify;
+    margin-right: 15px;
+}
+
+.compromissos p{
+    padding: 16px 0px;
+}
+
+.compromissos img{
+    border-radius: 15px 1px 0 0;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+footer p{
+    padding: 50px 0px;
+}

@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+
+fieldset {
+    border: 3px solid green;
+    margin: 20px 300px;
+    padding: 50px;
+    text-align: center;
+}
+
+legend {
+    font-size: 30px;
+    color: green;
+    font-weight: 700;
+}
+
+#nomeUsuario{
+    border: none;
+    border-bottom: 3px green solid;
+    width: 700px;
+    font-size: 16px;
+    color: rgb(6, 184, 6);
+}
+
+#campoNome {
+    font-size: 18px;
+    color: green;
+    text-align: center;
+}
+
+#botaoEntrar {
+    margin: 10px;
+    color: white;
+    background-color: green;
+    font-weight: 500;
+    padding: 10px 100px;
+    border: none;
+    font-size: 16px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    padding: 0px 200px;
+}
+
+.container>div{
+    margin-top: 20px;
+    width: 400px;
+    height: 200px;
+    border: solid 3px green;
+}
+
+.container>div>img{
+    width: 100px;
+}
+
+.container>div>input{
+    width: 180px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10x;
+    color: white;
+      
+}
+#sorteio{
+    background-color: brown;
+    border: none;
+    padding: 4px 10px;
+    margin-bottom: 5px;
+}
