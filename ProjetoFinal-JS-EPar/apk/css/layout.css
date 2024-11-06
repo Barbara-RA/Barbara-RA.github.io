@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+body {
+    font-family: 'Gluten', sans-serif;
+    background-color: #f0f0f0;
+    font-size: 20px;
+    color: #ffffff;
+    background-image: url('../img/v2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.wrapper {
+    min-height: calc(100vh - 120px); /* Ajustado para as alturas do cabeçalho e do rodapé */
+    position: relative;
+}
+
+header {
+    background: linear-gradient(to right, #fff9ff, #EFE8DC);
+    color: #161414;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+header>div, footer>div {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+header img, footer img {
+    margin: 0px 3px;
+}
+
+header>div, footer>div {
+    margin: 10px 50px;
+}
+
+div{
+    display: flex;
+    padding: 5px;
+}
+
+#controlesJogo{
+    align-items: center;
+}
+
+span {
+    color: #beaa86;
+    font-size: 38px;
+}
+
+
+.login div, .cadastro div {
+    display: flex;
+    flex-direction: column;
+}
+
+#alteraEstilo{
+    background-color: #beaa86;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+select {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    margin: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    padding-top: 60px;
+}
+
+main p {
+    margin: 70% 0px;
+    font-size: 260px;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(to right, #fff9ff, #EFE8DC);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+footer>div {
+    width: 250px;
+
+}
+
+footer>div>p {
+    text-align: left;
+}
+
+footer img {
+    width: 20%;
+}
+
+#percentual {
+    font-size: 20px;
+}
+
+input[type="button"] {
+    background: #beaa86;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Gluten', sans-serif;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+}
+
+input[type="button"]:hover {
+    background: #beaa867a;
+    transform: scale(1.1);
+}
+input[type="password"],input[type="text"] {
+    background: #beaa867a;
+    transform: scale(1.1);
+    color: black;
+}
+
+input[type="password"]:hover,input[type="text"]:hover {
+    background: #beaa867a;
+    transform: scale(1.1);
+    color: black;
+}
+
+.acerto {
+    color: green;
+}
+
+.erro {
+    color: rgb(167, 45, 14);
+}
+
+
+
+/* --------------------------------------------------------------------------------------- */
+
+#iniciar{
+    background-image: url(../img/icons8-reproduzir-96.png);
+}
+
+#pausar{
+    background-image: url(../img/icons8-pausa-96.png);
+}
+
+#parar{
+    background-image: url(../img/icons8-parar-96.png);
+}
+
+#iniciar,#pausar,#parar{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 20%;
+    transition: 0.1s;
+}
+.cadastro{
+    background-image: url(../img/v4.jpg);
+    background-size: cover;
+    color: #ffffff; 
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center; 
+}
+
+.cadastro .cadastro-container {
+    background-color: #f8f5f26b; 
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    margin: 50px auto;
+}
+
+
+.cadastro h2{
+    color: f7f6f6;
+    text-align: center;
+    padding: 10px;
+}
+.cadastro button{
+    padding: 10px;
+    background-color: #c49a4b; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.login h2 {
+    color: #f7f6f6;
+    text-align: center;
+    padding: 10px;
+}
+
+.cadastro form, .login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro input, .login input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff; 
+    border-radius: 5px;
+    background-color: #e9e3e3; 
+    color: #684608; 
+}
+
+
+.login{
+    background-image: url(../img/v3.jpg);
+    background-size: cover;
+    color: #ffffff; 
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.login .login-container {
+    background-color: #f8f5f26b; 
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    margin: 50px auto;
+}
+
+.login button {
+    padding: 10px;
+    background-color: #c49a4b; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.cadastro button:hover{
+    background-color: #684608;
+}
+.login button:hover {
+    background-color: #77520d;
+}
+
+.cadastro .signup-link, .login .signup-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.cadastro .signup-link:hover, .login .signup-link:hover {
+    text-decoration: underline;
+}
+
+#sair{
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(../img/icons8-desligar-80.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y:  center;
+    padding: 20px;
+    margin: 5px;
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#sair:hover{
+    transform: translate(0px, -5px);
+    
+}
+
+#sair a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+@media (min-width: 1000px){
+    body {
+        background-size: cover;
+        background-image: url('../img/v8.jpg');
+    }
+
+    header, footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+    }
+
+
+    header>div {
+        width: 150px;
+        
+    }
+    main p {
+    margin: 150px;
+    font-size: 400px;
+    color: #c49a4b;
+    text-align: center;
+    }
+    #iniciar,#pausar,#parar{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        border-radius: 20%;
+        transition: 0.1s;
+    }
+
+    input[type="button"]{
+        padding: 10px 25px;
+    }
+
+    #alteraEstilo{
+        margin: 0px;
+    }
+
+    .btnSuperior{
+        width: auto;
+    }
+    #controlesJogo{
+        margin: 0px;
+        width: 33%;
+    }
+
+    .wrapper {
+    min-height: calc(100vh - 120px);
+    position: relative;
+    }
+
+    .cadastro{
+        background-image: url(../img/v6.jpg);
+        background-size: cover;
+    }
+
+}
