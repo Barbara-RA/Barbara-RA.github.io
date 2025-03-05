@@ -1,0 +1,31 @@
+.button {
+    color: var(--cor-default);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 15px; /* Deixa o botão arredondado */
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+
+.button:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1250px) {
+    .button {
+        font-size: 1.1rem;
+        padding: 1rem 2.5rem;
+    }
+}

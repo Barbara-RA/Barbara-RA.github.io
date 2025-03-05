@@ -1,0 +1,43 @@
+{
+    "comerciais": [
+      "/images/portfolio/comercial/1.png",
+      "/images/portfolio/comercial/2.png",
+      "/images/portfolio/comercial/3.png",
+      "/images/portfolio/comercial/4.png",
+      "/images/portfolio/comercial/5.png",
+      "/images/portfolio/comercial/6.png",
+      "/images/portfolio/comercial/7.png",
+      "/images/portfolio/comercial/8.png",
+      "/images/portfolio/comercial/9.png",
+      "/images/portfolio/comercial/10.png"
+    ],
+    "hospedagem": [
+      "/images/portfolio/hospedagem/1.jpg",
+      "/images/portfolio/hospedagem/2.JPG",
+      "/images/portfolio/hospedagem/3.JPG",
+      "/images/portfolio/hospedagem/4.JPG",
+      "/images/portfolio/hospedagem/5.JPG",
+      "/images/portfolio/hospedagem/6.JPG",
+      "/images/portfolio/hospedagem/7.JPG",
+      "/images/portfolio/hospedagem/8.jpg",
+      "/images/portfolio/hospedagem/9.jpg",
+      "/images/portfolio/hospedagem/10.jpg"
+    ],
+    "residenciais": [
+      "/images/portfolio/residencial/1.jpeg",
+      "/images/portfolio/residencial/2.png",
+      "/images/portfolio/residencial/3.png",
+      "/images/portfolio/residencial/4.png",
+      "/images/portfolio/residencial/5.png",
+      "/images/portfolio/residencial/6.png",
+      "/images/portfolio/residencial/7.png",
+      "/images/portfolio/residencial/8.jpeg",
+      "/images/portfolio/residencial/9.png",
+      "/images/portfolio/residencial/10.png",
+      "/images/portfolio/residencial/11.png",
+      "/images/portfolio/residencial/12.jpeg",
+      "/images/portfolio/residencial/13.png",
+      "/images/portfolio/residencial/14.png"
+    ]
+  }
+  

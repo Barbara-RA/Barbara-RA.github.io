@@ -1,0 +1,43 @@
+.about {
+    padding: 1.5rem;
+    background-color: var(--cor-background);
+    color: var(--cor-on-background);
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 1rem;
+}
+
+
+.sidebar {
+    border-left: 0.11rem solid var(--cor-primaria);
+    padding-left: 1.5rem;
+}
+
+.sidebar p {
+    margin: 1rem 0;
+}
+
+@media (min-width: 1250px) {
+    .aboutContent {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .sidebar p {
+        margin: 2rem 0;
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,9 @@
+.authoritySection {
+    background-color: var(--cor-on-background);
+}
+
+@media (min-width: 1024px) {
+    .authoritySection {
+        margin-top: 25px;
+    }
+}

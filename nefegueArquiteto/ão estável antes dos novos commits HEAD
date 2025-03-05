@@ -1,0 +1,52 @@
+[33m9cd3f94[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge branch 'main' of https://github.com/Barbara-RA/nefegueArquiteto
+[33mfd8d9d1[m transição com maior tempo na home
+[33m7e26adc[m Add portfolio modal and refactor portfolio section components
+[33m1717e5d[m Removendo efeito de abertura FAQ
+[33mf742dca[m Link para whatsapp no botão da home
+[33m0d4a586[m Tela de loading e efeito no texto da página da home
+[33m696b6bf[m Mudar a cor do botão no hover
+[33m8a469d5[m Ajuste no tamanho dos componentes da home
+[33mcde72b2[m Fazer a home ocupar a tela inteira
+[33m4a33ac7[m Ocupar toda home com a capa
+[33m2510644[m remover deslocamento entre opções da barra de navegação
+[33m38cf0c1[m reduzir tamanho dos ícones do instagram
+[33m3a4480f[m reduzir tamanho da logo
+[33m0cf603a[m adicionando fotos cabana ipe branco
+[33m0872514[m renomeando título secao social
+[33mb3df1d4[m renomeando imagens
+[33m8bf73ad[m imagem não utilizada
+[33m463eec3[m ajustando secao prova social
+[33m0a9d96a[m Add unique IDs to portfolio slides and refactor mapping logic for improved accessibility
+[33m5c31f7f[m Refactor PortfolioSection to use grid layout and update styles for better responsiveness
+[33m8b24de0[m faqdetails style
+[33m40baab9[m mobile-portfolio-carrossel
+[33mbecbc61[m Teste header UseMediaQuery
+[33m370afbe[m npm i
+[33m6171ab8[m Responsividade e finalização da implementação do Header, HomeSection e DescriptionSection
+[33m9d200ea[m ajustes na faq e socialProof
+[33m76c8e4d[m adicionando slide de imagens para cada prova social
+[33m87161b1[m Recriando package-lock.json
+[33m4de1263[m Estrutura básica do Header, HomeSection e DescriptionSection
+[33mbf07ddc[m Refactor CSS styles and add new CSS modules
+[33mb9b03ab[m Refactor global CSS styles and add new CSS modules
+[33m7ed2e51[m Add PortfolioSection component and its styles
+[33mcee738a[m efeito de contagem CardAuthority e ajuste foto whatsapp
+[33ma413a99[m Configurando overflow-x
+[33m0fb019f[m conclusão layout - Desktop
+[33m100d33f[m limpando o código
+[33m1114c34[m melhorando código da socialProofSection
+[33m494dfa6[m Conclusão do Footer mobile
+[33ma0ed28b[m Finalização do css da section AboutMeSection
+[33m61212ab[m Merge branch 'main' of https://github.com/Barbara-RA/nefegueArquiteto
+[33mf7ce066[m AboutMeSection separação Mobile e Desktop
+[33m1233342[m adicionando prova social mobile e desktop
+[33m57c993b[m primeira versão faq
+[33mdb4bc92[m Merge branch 'main' of https://github.com/Barbara-RA/nefegueArquiteto
+[33me306002[m melhorando estilo faq
+[33m33a9031[m Criação de componente Título e utilização em AboutMeSection
+[33mce889e3[m corrigindo erros console
+[33m24af0ed[m criação de AuthoritySectione importação do css global para o App
+[33m71b0e4f[m Definindo meta tags, icone da página e concluindo o componete WhatsApp
+[33mea53839[m Definições do CSS global
+[33mf8fbc0d[m adicionando faq mobile
+[33m4384136[m first commit
