@@ -1,0 +1,6 @@
+[
+  { "id": "all", "label": "All" },
+  { "id": "a_caminho", "label": "A caminho" },
+  { "id": "tenho", "label": "Tenho" },
+  { "id": "desejado", "label": "Desejado" }
+]
