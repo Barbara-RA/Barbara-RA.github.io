@@ -22,10 +22,7 @@
         <p class="brand__subtitle">Coleção • Dark Theme</p>
       </header>
 
-      <section class="sidebar__section">
-        <label for="searchInput" class="sidebar__label">Pesquisar</label>
-        <input id="searchInput" type="search" placeholder="Buscar por título…" autocomplete="off" />
-      </section>
+      <!-- Barra de pesquisa movida para a toolbar -->
 
       <!-- Filtros: serão preenchidos via JSON pelo app.js -->
       <section class="sidebar__section" aria-labelledby="statusTitle">
@@ -36,10 +33,19 @@
         </ul>
       </section>
 
+
       <section class="sidebar__section" aria-labelledby="groupTitle">
         <h2 id="groupTitle" class="sidebar__title">Group</h2>
         <!-- Opções vindas de data/groups.json (Regular, Caratê, POB, All) -->
         <ul id="groupFilter" class="filter-list" role="list">
+          <!-- Populado dinamicamente -->
+        </ul>
+      </section>
+
+      <section class="sidebar__section" aria-labelledby="categoryTitle">
+        <h2 id="categoryTitle" class="sidebar__title">Category</h2>
+        <!-- Opções vindas de data/category.json (Hoshi, Seokmin, Seventeen, All) -->
+        <ul id="categoryFilter" class="filter-list" role="list">
           <!-- Populado dinamicamente -->
         </ul>
       </section>
@@ -49,7 +55,9 @@
       </section>
 
       <footer class="sidebar__footer">
-        <small>Feito com ♥ — Dark (preto, cinza, roxo)</small>
+        <a href="https://www.instagram.com/ddaengsims/" target="_blank" rel="noopener" class="sidebar__instagram" aria-label="Instagram">
+          <img src="img/intagramLogo.svg" alt="Instagram" class="instagram-logo" />
+        </a>
       </footer>
     </aside>
 
@@ -57,8 +65,13 @@
     <main class="main" id="mainContent" tabindex="-1">
       <!-- Barra superior opcional (contagem, ordenação, etc.) -->
       <div class="toolbar" aria-label="Ferramentas de visualização">
-        <div id="resultsCount" class="toolbar__count" aria-live="polite">0 itens</div>
-
+        <div class="toolbar__left">
+          <div id="resultsCount" class="toolbar__count" aria-live="polite">0 itens</div>
+          <div class="toolbar__search">
+            <label for="searchInput" class="visually-hidden">Pesquisar✨</label>
+            <input id="searchInput" type="search" placeholder="Buscar por título…" autocomplete="off" />
+          </div>
+        </div>
         <div class="toolbar__controls">
           <label for="sortSelect" class="visually-hidden">Ordenar por</label>
           <select id="sortSelect">
@@ -79,10 +92,12 @@
   </div>
 
   <!-- Template do Card (142 x 220 definidos no CSS) -->
+
   <template id="cardTemplate">
-    <article class="card" data-status="" data-group="" tabindex="0" aria-label="Item da galeria">
+    <article class="card" data-status="" data-group="" data-category="" tabindex="0" aria-label="Item da galeria">
+      <span class="tag tag--status card__status-tag" data-tag-status=""></span>
       <div class="card__tags">
-        <span class="tag tag--status" data-tag-status=""></span>
+        <span class="tag tag--category card__category-tag" data-tag-category=""></span>
         <span class="tag tag--group" data-tag-group=""></span>
       </div>
       <h3 class="card__title"></h3>

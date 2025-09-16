@@ -3,6 +3,7 @@
 const PATHS = {
   status: 'data/status.json',
   groups: 'data/groups.json',
+  category: 'data/category.json',
   cards: 'data/cards.json',
 };
 
@@ -20,24 +21,33 @@ const FALLBACK = {
     { id: 'carate', label: 'Caratê' },
     { id: 'pob', label: 'POB' },
   ],
+  category: [
+    { id: 'all', label: 'All' },
+    { id: 'hoshi', label: 'Hoshi' },
+    { id: 'seokmin', label: 'Seokmin' },
+    { id: 'seventeen', label: 'Seventeen' },
+  ],
   cards: [
     {
       title: 'Sunset Dream',
       image: 'https://via.placeholder.com/142x220.png?text=Sunset',
       status: 'tenho',
       group: 'regular',
+      category: 'hoshi',
     },
     {
       title: 'Night Walker',
       image: 'https://via.placeholder.com/142x220.png?text=Night',
       status: 'desejado',
       group: 'carate',
+      category: 'seokmin',
     },
     {
       title: 'Purple Shine',
       image: 'https://via.placeholder.com/142x220.png?text=Purple',
       status: 'a_caminho',
       group: 'pob',
+      category: 'seventeen',
     }
   ],
 };
@@ -45,13 +55,15 @@ const FALLBACK = {
 const state = {
   statusOptions: [],
   groupOptions: [],
+  categoryOptions: [],
   cardsAll: [],
-  filters: { status: 'all', group: 'all', search: '', sort: 'title-asc' },
+  filters: { status: 'all', group: 'all', category: 'all', search: '', sort: 'title-asc' },
 };
 
 const els = {
   statusFilter: document.getElementById('statusFilter'),
   groupFilter: document.getElementById('groupFilter'),
+  categoryFilter: document.getElementById('categoryFilter'),
   cardsGrid: document.getElementById('cardsGrid'),
   cardTemplate: document.getElementById('cardTemplate'),
   resultsCount: document.getElementById('resultsCount'),
@@ -112,25 +124,26 @@ function sortCards(list, sortKey, idxStatus, idxGroup) {
 }
 
 function getFilteredCards() {
-  const { status, group, search } = state.filters;
+  const { status, group, category, search } = state.filters;
   const term = search.trim().toLowerCase();
   return state.cardsAll.filter((card) => {
     const okS = status === 'all' ? true : card.status === status;
     const okG = group === 'all' ? true : card.group === group;
+    const okC = category === 'all' ? true : card.category === category;
     const okQ = term ? card.title.toLowerCase().includes(term) : true;
-    return okS && okG && okQ;
+    return okS && okG && okC && okQ;
   });
 }
 
 function renderCards() {
   const idxS = buildOrderIndex(state.statusOptions);
   const idxG = buildOrderIndex(state.groupOptions);
+  const idxC = buildOrderIndex(state.categoryOptions);
   const filtered = getFilteredCards();
   const sorted = sortCards(filtered, state.filters.sort, idxS, idxG);
 
   els.cardsGrid.innerHTML = '';
   const frag = document.createDocumentFragment();
-
 
   sorted.forEach((item) => {
     const node = els.cardTemplate.content.cloneNode(true);
@@ -138,11 +151,14 @@ function renderCards() {
     const media = node.querySelector('.card__media');
     const img = node.querySelector('.card__img');
     const title = node.querySelector('.card__title');
-    const tagStatus = node.querySelector('[data-tag-status]');
+
+    const tagStatus = node.querySelector('.card__status-tag');
     const tagGroup = node.querySelector('[data-tag-group]');
+    const tagCategory = node.querySelector('.card__category-tag');
 
     article.dataset.status = item.status;
     article.dataset.group = item.group;
+    article.dataset.category = item.category;
 
     // Aplica imagem como background do card
     article.style.backgroundImage = `url('${item.image}')`;
@@ -155,9 +171,20 @@ function renderCards() {
     if (media) media.remove();
 
     title.textContent = item.title;
-  tagStatus.textContent = labelFromId(state.statusOptions, item.status);
-  tagStatus.setAttribute('data-tag-status', item.status);
-    tagGroup.textContent = labelFromId(state.groupOptions, item.group);
+    // Status sempre visível
+    if (tagStatus) {
+      tagStatus.textContent = labelFromId(state.statusOptions, item.status);
+      tagStatus.setAttribute('data-tag-status', item.status);
+    }
+    // Category e group só aparecem no hover
+    if (tagCategory) {
+      tagCategory.textContent = labelFromId(state.categoryOptions, item.category);
+      tagCategory.setAttribute('data-tag-category', item.category);
+    }
+    if (tagGroup) {
+      tagGroup.textContent = labelFromId(state.groupOptions, item.group);
+      tagGroup.setAttribute('data-tag-group', item.group);
+    }
 
     frag.appendChild(node);
   });
@@ -189,11 +216,12 @@ async function reloadData() {
 }
 
 function clearFilters() {
-  state.filters = { status: 'all', group: 'all', search: '', sort: 'title-asc' };
+  state.filters = { status: 'all', group: 'all', category: 'all', search: '', sort: 'title-asc' };
   els.searchInput.value = '';
   els.sortSelect.value = 'title-asc';
   renderFilterList(els.statusFilter, state.statusOptions, 'all', handleStatusSelect);
   renderFilterList(els.groupFilter, state.groupOptions, 'all', handleGroupSelect);
+  renderFilterList(els.categoryFilter, state.categoryOptions, 'all', handleCategorySelect);
   renderCards();
   speak('Filtros limpos. Exibindo todos os itens.');
 }
@@ -215,14 +243,18 @@ function normalizeCards(arr){
     image: String(c.image ?? '').trim(),
     status: String(c.status ?? 'all').trim(),
     group: String(c.group ?? 'all').trim(),
+    category: String(c.category ?? 'all').trim(),
   }));
 }
 
 function isFileProtocol(){ return location.protocol === 'file:'; }
 
+
+function handleCategorySelect(id){ state.filters.category = id; renderCards(); }
+
 async function init() {
-  // 1) tenta buscar status e grupos, com fallback
-  let statusOpts, groupOpts, cards;
+  // 1) tenta buscar status, grupos e categorias, com fallback
+  let statusOpts, groupOpts, categoryOpts, cards;
   try {
     statusOpts = await fetchJSON(PATHS.status);
   } catch (e) {
@@ -236,6 +268,12 @@ async function init() {
     groupOpts = FALLBACK.groups;
   }
   try {
+    categoryOpts = await fetchJSON(PATHS.category);
+  } catch (e) {
+    console.warn('category.json falhou, usando FALLBACK', e);
+    categoryOpts = FALLBACK.category;
+  }
+  try {
     cards = await fetchJSON(PATHS.cards);
   } catch (e) {
     console.warn('cards.json falhou, exibindo zero cards', e);
@@ -245,11 +283,13 @@ async function init() {
   // 2) normaliza
   state.statusOptions = normalizeOptions(statusOpts, true);
   state.groupOptions = normalizeOptions(groupOpts, true);
+  state.categoryOptions = normalizeOptions(categoryOpts, true);
   state.cardsAll = normalizeCards(cards);
 
   // 3) render filtros (sempre renderiza)
   renderFilterList(els.statusFilter, state.statusOptions, state.filters.status, handleStatusSelect);
   renderFilterList(els.groupFilter, state.groupOptions, state.filters.group, handleGroupSelect);
+  renderFilterList(els.categoryFilter, state.categoryOptions, state.filters.category, handleCategorySelect);
 
   // 4) listeners
   els.searchInput.addEventListener('input', (e)=>handleSearchDebounced(e.target.value));
