@@ -1,0 +1,6 @@
+[
+  { "id": "all", "label": "All" },
+  { "id": "regular", "label": "Regular" },
+  { "id": "carat", "label": "Carat" },
+  { "id": "pob", "label": "POB" }
+]
