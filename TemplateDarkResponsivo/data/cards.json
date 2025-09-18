@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Hoshi",
+    "image": "https://i.pinimg.com/474x/09/5e/b7/095eb750ce583bcb91291eee764efd1d.jpg",
+    "status": "tenho",
+    "group": "regular",
+    "category": "hoshi"
+  },
+  {
+    "title": "Night Walker",
+    "image": "https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2024/10/03133219/63cad86cb183568085a4e5f0be86aa187cc511e4.jpeg",
+    "status": "desejado",
+    "group": "carat",
+    "category": "seokmin"
+  },
+  {
+    "title": "Purple Shine",
+    "image": "https://www.parents.com/thmb/TL5uZldoqvtpgKGR2vyHw-r28CI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Parents-bluey_s3_iconic_landscape-4786dc06c3d24f6988a3adceef599ced.jpg",
+    "status": "a_caminho",
+    "group": "pob",
+    "category": "seventeen"
+  },
+  {
+    "title": "Full Collection",
+    "image": "https://portaln10.com.br/todocanal/wp-content/uploads/2025/08/Criadores-de-Wandinha-vao-lancar-filme.png",
+    "status": "tenho",
+    "group": "carat",
+    "category": "seokmin"
+  }
+]
